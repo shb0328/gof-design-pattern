@@ -1,7 +1,7 @@
 package gof.designpattern.singleton;
 
 public class Settings {
-    public Settings() {
+    private Settings() {
     }
 
     private static  class SettingsHolder {
