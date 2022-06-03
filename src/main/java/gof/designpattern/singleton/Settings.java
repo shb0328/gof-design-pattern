@@ -13,4 +13,9 @@ public class Settings implements Serializable {
     public static Settings getInstance() {
         return SettingsHolder.INSTANCE;
     }
+
+    //readObject() 내부적으로 호출되는 코드
+    protected Object readResolve() {
+        return getInstance();
+    }
 }
