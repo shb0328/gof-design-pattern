@@ -3,11 +3,8 @@ package gof.designpattern.factorymethod._02_after;
 public class Client {
 
     public static void main(String[] args) {
-        Ship whiteship = ShipFactory.orderShip("Whiteship", "keesun@mail.com");
-        System.out.println(whiteship);
-
-        Ship blackship = ShipFactory.orderShip("Blackship", "keesun@mail.com");
-        System.out.println(blackship);
+        Ship whiteShip = new WhiteShipFactory().orderShip("Whiteship", "hyebb@mail.com");
+        System.out.println(whiteShip);
     }
 
 }
