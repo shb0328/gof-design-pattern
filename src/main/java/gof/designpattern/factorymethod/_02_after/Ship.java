@@ -39,6 +39,14 @@ public class Ship {
         this.logo = logo;
     }
 
+    public Anchor getAnchor() {
+        return anchor;
+    }
+
+    public Wheel getWheel() {
+        return wheel;
+    }
+
     @Override
     public String toString() {
         return "Ship{" +
